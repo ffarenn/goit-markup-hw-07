@@ -21,3 +21,27 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: var(--main-font-size);
+  color: var(--background-color);
+}
+
+.flex-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.margins-right:not(:last-child) {
+  margin-right: 30px;
+}

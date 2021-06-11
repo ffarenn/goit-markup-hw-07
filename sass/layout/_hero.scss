@@ -1,0 +1,37 @@
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background: var(--hero-footer-background);
+
+  &__container {
+    flex-direction: column;
+  }
+
+  &-background {
+    width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__title {
+    @include font($fs: 44px, $lh: 60px, $fw: 900);
+    width: 696px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--h1-button-text-color);
+  }
+
+  &__modal-btn_margin_top {
+    margin-top: 30px;
+  }
+}

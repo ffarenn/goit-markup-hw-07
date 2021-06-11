@@ -13,16 +13,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./sass/main.scss">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <header class="header">
         <!-- Navigation section -->
         <div class="container flex-component">
-            <nav class="header-nav flex-component">
-                <a class="logo header__logo header-logo_margin_right link" lang="en" href="./index.html">Web<span class="header-logo_color">Studio</span></a>
+            <nav class="header__nav flex-component">
+                <a class="logo header__logo header__logo_margin_right link" lang="en" href="./index.html">Web<span class="header-logo_color">Studio</span></a>
         
                 <ul class="menu flex-component list">
                     <li class="menu__item"><a class="menu__link link current" href="./index.html">Студия</a></li>
@@ -51,7 +50,7 @@
             <div class="container hero__container flex-component">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
 
-                <button class="modal-btn buttons hero-button_margin_top" data-modal-open>Заказать услугу</button>
+                <button class="modal-btn buttons hero__modal-btn_margin_top" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -142,8 +141,8 @@
                     <li class="team__item">
                         <img src="./images/our-team/team1.jpg" alt="Наша команда" width="270">
                             <div class="team__card-description-box">    
-                                <h3 class="team__suptitle title_color team-card-description-text">Игорь Демьяненко</h3>
-                                <p class="team__description team-card-description-text" lang="en">Product Designer</p>
+                                <h3 class="team__suptitle title_color team__text">Игорь Демьяненко</h3>
+                                <p class="team__description team__text" lang="en">Product Designer</p>
 
                                 <ul class="social-list team__social-list_margin flex-component">
                                     <li class="social-list__item">
@@ -180,8 +179,8 @@
                     <li class="team__item">
                         <img src="./images/our-team/team2.jpg" alt="Наша команда" width="270">
                             <div class="team__card-description-box">    
-                                <h3 class="team__suptitle title_color team-card-description-text">Ольга Репина</h3>
-                                <p class="team__description team-card-description-text" lang="en">Frontend Developer</p>
+                                <h3 class="team__suptitle title_color team__text">Ольга Репина</h3>
+                                <p class="team__description team__text" lang="en">Frontend Developer</p>
 
                                 <ul class="social-list team__social-list_margin flex-component">
                                     <li class="social-list__item">
@@ -218,8 +217,8 @@
                     <li class="team__item">
                         <img src="./images/our-team/team3.jpg" alt="Наша команда" width="270">
                             <div class="team__card-description-box">   
-                                <h3 class="team__suptitle title_color team-card-description-text">Николай Тарасов</h3>
-                                <p class="team__description team-card-description-text" lang="en">Marketing</p>
+                                <h3 class="team__suptitle title_color team__text">Николай Тарасов</h3>
+                                <p class="team__description team__text" lang="en">Marketing</p>
 
                                 <ul class="social-list team__social-list_margin flex-component">
                                     <li class="social-list__item">
@@ -256,8 +255,8 @@
                     <li class="team__item">
                         <img src="./images/our-team/team4.jpg" alt="Наша команда" width="270">
                             <div class="team__card-description-box">    
-                                <h3 class="team__suptitle title_color team-card-description-text">Михаил Ермаков</h3>
-                                <p class="team__description team-card-description-text" lang="en">UI Designer</p>
+                                <h3 class="team__suptitle title_color team__text">Михаил Ермаков</h3>
+                                <p class="team__description team__text" lang="en">UI Designer</p>
 
                                 <ul class="social-list team__social-list_margin flex-component">
                                     <li class="social-list__item">
@@ -350,7 +349,7 @@
     <footer class="footer">
         <div class="container footer__container">
             <div class="footer__address-section">
-                <a class="logo footer__logo link" lang="en" href="./index.html">Web<span class="footer-logo_color">Studio</span></a>
+                <a class="logo footer__logo link" lang="en" href="./index.html">Web<span class="footer__logo_color">Studio</span></a>
 
                 <!-- Address section -->
                 <address class="footer__address-box">
@@ -471,7 +470,7 @@
                             Соглашаюсь с рассылкой и принимаю &nbsp;<a class="contact-form__checkbox-policy-link" href="">Условия договора</a>
                         </label>
 
-                <button type="submit" class="modal-btn buttons contact-form-button">Отправить</button>
+                <button type="submit" class="modal-btn buttons contact-form__button">Отправить</button>
             </form>
         </div>
     </div>

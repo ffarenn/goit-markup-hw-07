@@ -1,6 +1,7 @@
 // Utils
 @import "./utils/variables";
 @import "./utils/visually-hidden";
+@import "./utils/mixins";
 
 // Base
 @import "./base/common";
@@ -9,11 +10,23 @@
 
 // Components
 @import "./components/backdrop";
-@import "./components/description";
+@import "./components/logo";
+@import "./components/buttons";
 @import "./components/modal-btn";
 @import "./components/modal-form";
 @import "./components/modal-window";
-@import "./components/social-list-link";
+@import "./components/contact-links";
 @import "./components/social-list";
-@import "./components/suptitle";
 @import "./components/title";
+@import "./components/mailing";
+
+// Layout
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/advantages";
+@import "./layout/task";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/portfolio-radio-buttons";
+@import "./layout/portfolio-cards";

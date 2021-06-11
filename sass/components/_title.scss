@@ -1,0 +1,9 @@
+.title {
+  @include font($fs: 36px, $lh: 42px, $fw: 700);
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  &_color {
+    color: var(--primary-text-color);
+  }
+}

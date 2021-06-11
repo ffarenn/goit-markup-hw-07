@@ -104,7 +104,7 @@ body {
   background-color: var(--h1-button-text-color);
 }
 
-.header-nav {
+.header__nav {
   margin-right: 305px;
 }
 
@@ -118,11 +118,11 @@ body {
   color: var(--accent-color);
 }
 
-.header-logo_margin_right {
+.header__logo_margin_right {
   margin-right: 93px;
 }
 
-.header-logo_color {
+.header__logo_color {
   color: var(--logo-top-color);
 }
 
@@ -297,7 +297,7 @@ body {
   color: var(--h1-button-text-color);
 }
 
-.hero-button_margin_top {
+.hero__modal-btn_margin_top {
   margin-top: 30px;
 }
 
@@ -408,20 +408,17 @@ body {
   padding-bottom: 30px;
 }
 
-.team-card-description-text {
+.team__text {
   font-size: var(--secondary-font-size);
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 10px;
+  color: var(--secondary-text-color);
 }
 
 .team__suptitle {
   font-weight: 500;
-}
-
-.team__description {
-  margin-top: 10px;
-  color: var(--secondary-text-color);
 }
 
 .team__social-list_margin {
@@ -605,6 +602,11 @@ body {
 /* PORTTFOLIO CSS */
 /* ======== Radio button section ======== */
 
+.portfolio__box {
+  display: flex;
+  flex-direction: column;
+}
+
 .portfolio__radio-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -640,11 +642,6 @@ body {
 /* ======== Radio button section END ======== */
 
 /* ======== Portfolio section ======== */
-
-.portfolio__box {
-  display: flex;
-  flex-direction: column;
-}
 
 .portfolio__card-list {
   display: flex;
@@ -823,8 +820,7 @@ body {
   border-radius: 4px;
 }
 
-.contact-form__input:focus,
-.contact-form__textarea:focus {
+.contact-form__input:focus {
   border: 1px solid var(--accent-color);
   outline: none;
 }
@@ -852,6 +848,11 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+}
+
+.contact-form__textarea:focus {
+  border: 1px solid var(--accent-color);
+  outline: none;
 }
 
 .contact-form__textarea::placeholder {
@@ -906,7 +907,7 @@ body {
   color: var(--accent-color);
 }
 
-.contact-form-button {
+.contact-form__button {
   align-self: center;
   margin-top: 30px;
 }
