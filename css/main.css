@@ -498,7 +498,7 @@ body {
   color: var(--logo-top-color);
 }
 
-.header-contacts-link {
+.header__contacts-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

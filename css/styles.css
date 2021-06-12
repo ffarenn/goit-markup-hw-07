@@ -207,7 +207,7 @@ body {
     fill 250ms var(--transition-cubic);
 }
 
-.header-contacts-link {
+.header__contacts-link {
   display: flex;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
