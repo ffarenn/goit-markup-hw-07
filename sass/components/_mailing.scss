@@ -1,12 +1,18 @@
 .mailing-form {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   margin-top: 20px;
+  position: relative;
+
+  @media screen and (max-width: 1199px) {
+    & {
+      flex-direction: column;
+    }
+  }
 
   &__input {
-    width: 358px;
+    width: 450px;
     padding: 15px 16px;
-    margin-right: 12px;
     color: var(--h1-button-text-color);
     background-color: var(--hero-footer-background);
 
@@ -21,8 +27,28 @@
     }
   }
 
+  @media screen and (min-width: 1200px) {
+    &__input {
+      width: 358px;
+      height: 50px;
+    }
+  }
+
+   @media screen and (min-width: 1200px) {
+    &__input {
+     margin-right: 12px;
+    }
+  }
+
+
   &__button {
     padding: 10px 28px;
+  }
+
+   @media screen and (max-width: 1199px) {
+    &__button {
+     margin-top: 20px;
+    }
   }
 
   &__icon {

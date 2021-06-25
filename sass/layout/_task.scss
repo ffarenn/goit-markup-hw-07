@@ -1,6 +1,10 @@
 .task {
+    @media screen and (max-width: 1199px) {
+    display: none !important;
+  }
+
   &_padding_bottom {
-    padding-bottom: 94px;
+  padding-bottom: 94px;
   }
 
   &__list {

@@ -1,3 +1,11 @@
+.contacts__list {
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
 .contacts__link {
   @include font($fs: 14px, $lh: 16px, $fw: 500);
   transition: color 250ms var(--transition-cubic),

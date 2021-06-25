@@ -1,21 +1,49 @@
 .clients {
-  flex-wrap: wrap;
-
   &__list_margin {
-    margin-top: 50px;
+    margin-top: 30px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 210px);
+    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 226px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+
+  @media screen and (min-width: 1199px) {
+    &__list_margin {
+      margin-top: 50px;
+    }
   }
 
   &__link {
-    width: 170px;
     height: 92px;
     border: 1px solid var(--icon-color);
     border-radius: 4px;
 
     transition: border-color 250ms var(--transition-cubic);
 
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
+
     &:hover,
     &:focus {
       border-color: var(--accent-color);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__link {
+      width: 210px;
     }
   }
 
