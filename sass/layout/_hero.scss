@@ -29,7 +29,7 @@
             HeroBackgroundGradient,
             $HeroBackgroundGradient
           ),
-          url("../images/hero-bg/hero-image-mob@2x.jpg");
+          url(../images/hero-bg/hero-image-mob@2x.jpg);
       }
     }
 
@@ -38,7 +38,7 @@
           HeroBackgroundGradient,
           $HeroBackgroundGradient
         ),
-        url("../images/hero-bg/hero-image-tablet.jpg");
+        url(../images/hero-bg/hero-image-tablet.jpg);
       height: 400px;
     }
 
@@ -50,7 +50,7 @@
             HeroBackgroundGradient,
             $HeroBackgroundGradient
           ),
-          url("../images/hero-bg/hero-image-tablet@2x.jpg");
+          url(../images/hero-bg/hero-image-tablet@2x.jpg);
       }
     }
 
@@ -59,7 +59,7 @@
           HeroBackgroundGradient,
           $HeroBackgroundGradient
         ),
-        url("../images/hero-bg/hero-image-desktop.jpg");
+        url(../images/hero-bg/hero-image-desktop.jpg);
       height: 600px;
       max-width: 1600px;
 
@@ -75,7 +75,7 @@
             HeroBackgroundGradient,
             $HeroBackgroundGradient
           ),
-          url("../images/hero-bg/hero-image-desktop@2x.jpg");
+          url(../images/hero-bg/hero-image-desktop@2x.jpg);
       }
     }
   }
