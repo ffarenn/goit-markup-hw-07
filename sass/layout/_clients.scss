@@ -14,6 +14,7 @@
     grid-template-columns: repeat(1, 100%);
     gap: 30px;
     justify-content: center;
+    align-items: center;
 
     @media screen and (min-width: 480px) {
       display: grid;
@@ -27,6 +28,13 @@
 
     @media screen and (min-width: 1200px) {
       grid-template-columns: repeat(6, 170px);
+    }
+  }
+
+  &__item {
+    @media screen and (max-width: 479px) {
+      display: flex;
+      justify-content: center;
     }
   }
 

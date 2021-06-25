@@ -723,6 +723,7 @@ body {
   flex-direction: column;
 }
 .hero-background {
+  width: 100%;
   min-width: 280px;
   height: 400px;
   margin-left: auto;
@@ -975,6 +976,7 @@ body {
   grid-template-columns: repeat(1, 100%);
   gap: 30px;
   justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 480px) {
   .clients__list {
@@ -991,6 +993,12 @@ body {
 @media screen and (min-width: 1200px) {
   .clients__list {
     grid-template-columns: repeat(6, 170px);
+  }
+}
+@media screen and (max-width: 479px) {
+  .clients__item {
+    display: flex;
+    justify-content: center;
   }
 }
 .clients__link {
