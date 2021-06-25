@@ -4,10 +4,14 @@
   padding: 40px;
 
   &__title {
-    @include font($fs: 20px, $lh: 23px, $fw: 700);
+    @include font($fs: 20px, $lh: 30px, $fw: 700);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+
+    @media screen and (min-width: 1200px) {
+      @include font($fs: 20px, $lh: 23px, $fw: 700);
+    }
   }
 
   &__label {
@@ -74,12 +78,21 @@
 
   &__checkbox-policy {
     position: relative;
-    line-height: 1.7;
+    display: flex;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     margin-top: 20px;
     margin-left: 0;
     color: var(--secondary-text-color);
     cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      line-height: 1.7;
+    }
   }
 
   &__checkbox-icon {
@@ -98,10 +111,14 @@
     position: absolute;
     width: 16px;
     height: 15px;
-    left: 7px;
+    left: 0;
     opacity: 0;
     fill: var(--h1-button-text-color);
     transition: opacity 250ms var(--transition-cubic);
+
+    @media screen and (min-width: 1200px) {
+      left: 16px;
+    }
 
     .contact-form__checkbox-input:checked ~ & {
       fill: var(--accent-color);
@@ -111,11 +128,16 @@
   }
 
   &__checkbox-policy-link {
+    font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
 
     color: var(--accent-color);
+
+    @media screen and (min-width: 1200px) {
+      line-height: 1.7;
+    }
   }
 
   &__button {

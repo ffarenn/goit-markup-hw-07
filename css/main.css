@@ -296,11 +296,18 @@ body {
 }
 .contact-form__title {
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .contact-form__title {
+    font-size: 20px;
+    line-height: 1.15;
+    font-weight: 700;
+  }
 }
 .contact-form__label {
   font-size: 12px;
@@ -369,12 +376,22 @@ body {
 }
 .contact-form__checkbox-policy {
   position: relative;
-  line-height: 1.7;
+  display: flex;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   margin-top: 20px;
   margin-left: 0;
   color: var(--secondary-text-color);
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .contact-form__checkbox-policy {
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 .contact-form__checkbox-icon {
   width: 16px;
@@ -390,10 +407,15 @@ body {
   position: absolute;
   width: 16px;
   height: 15px;
-  left: 7px;
+  left: 0;
   opacity: 0;
   fill: var(--h1-button-text-color);
   transition: opacity 250ms var(--transition-cubic);
+}
+@media screen and (min-width: 1200px) {
+  .contact-form__checkbox-icon-check {
+    left: 16px;
+  }
 }
 .contact-form__checkbox-input:checked ~ .contact-form__checkbox-icon-check {
   fill: var(--accent-color);
@@ -401,11 +423,17 @@ body {
   outline-color: var(--accent-color);
 }
 .contact-form__checkbox-policy-link {
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .contact-form__checkbox-policy-link {
+    line-height: 1.7;
+  }
 }
 .contact-form__button {
   align-self: center;
@@ -416,12 +444,22 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
   transform: translate(-50%, -50%);
   background-color: var(--h1-button-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 .modal__close {
   position: absolute;
