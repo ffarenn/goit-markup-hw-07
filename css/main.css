@@ -1061,11 +1061,6 @@ body {
 .clients__link:hover, .clients__link:focus {
   border-color: var(--accent-color);
 }
-@media screen and (max-width: 767px) {
-  .clients__link {
-    width: 210px;
-  }
-}
 .clients__icon {
   width: 100%;
   fill: var(--icon-color);
@@ -1076,8 +1071,6 @@ body {
 }
 
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--hero-footer-background);
@@ -1088,8 +1081,6 @@ body {
   }
 }
 .footer__container {
-  padding-left: 15px;
-  padding-right: 15px;
   display: block;
   margin-left: auto;
   margin-right: auto;

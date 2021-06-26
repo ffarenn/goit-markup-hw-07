@@ -56,12 +56,6 @@
     }
   }
 
-  @media screen and (max-width: 767px) {
-    &__link {
-      width: 210px;
-    }
-  }
-
   &__icon {
     width: 100%;
     fill: var(--icon-color);
