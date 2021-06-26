@@ -1,167 +1,164 @@
-
 .mobile-menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vw;
-        overflow: auto;
-        background-color: var(--h1-button-text-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  overflow: auto;
+  background-color: var(--h1-button-text-color);
 
-        padding: 48px 83px 48px 40px;
-        
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
+  padding: 48px 83px 48px 40px;
 
-    &__close-btn {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        width: 40px;
-        height: 40px;
-        border: none;
-        background-color: transparent;
-        padding: 11px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 
-        &:hover,
-        &:focus {
-            fill: var(--logo-top-color);
-        }
+  &__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    padding: 11px;
+
+    &:hover,
+    &:focus {
+      fill: var(--logo-top-color);
+    }
+  }
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    z-index: 100;
+    width: 100vw;
+    height: 100%;
+  }
+
+  &__icon-close {
+    width: 18px;
+    height: 18px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02rem;
+    color: var(--primary-text-color);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
     }
 
-    &.is-open {
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
+    &-current {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.17;
+      letter-spacing: 0.02rem;
+
+      color: var(--accent-color);
     }
+  }
 
-    &__icon-close {
-        width: 18px;
-        height: 18px;
+  &__item:not(:last-child) {
+    margin-bottom: 33px;
+  }
+
+  &__contacts {
+    margin-top: 302px;
+  }
+
+  &__contacts-link {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02rem;
+
+    color: var(--secondary-text-color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
     }
+  }
 
-    &__link {
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 1.17;
-        letter-spacing: 0.02rem;
-        color: var(--primary-text-color);
-        text-decoration: none;
+  &__email {
+    margin-top: 32px;
+  }
 
-        &:hover,
-        &:focus {
-            color: var(--accent-color);
-        }
+  &__email {
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02rem;
 
-        &-current {
-            font-weight: 500;
-            font-size: 40px;
-            line-height: 1.17;
-            letter-spacing: 0.02rem;
+    margin-bottom: 64px;
 
-            color: var(--accent-color);
-        }
+    color: var(--secondary-text-color);
+  }
+
+  &__social-list {
+    display: flex;
+  }
+
+  &__social-item:not(:last-child) {
+    margin-right: 20px;
+
+    & :not(:last-child):after {
+      position: absolute;
+      content: "yyy";
+      width: 22px;
+
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      transform: rotate(90deg);
     }
+  }
 
-    &__item:not(:last-child) {
-        margin-bottom: 33px;
-    } 
+  &__social-links {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02rem;
+    text-decoration: none;
 
-    &__contacts {
-        margin-top: 302px;
+    color: var(--accent-color);
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 22px;
+      top: 10px;
+
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      transform: rotate(90deg);
     }
+  }
 
-    &__contacts-link {
-        font-weight: 500;
-        font-size: 34px;
-        line-height: 1.17;
-        letter-spacing: 0.02rem;
+  //     .mobile-menu__instagram,
+  // .mobile-menu__twitter,
+  // .mobile-menu__facebook {
+  //   position: relative;
 
-        color: var(--secondary-text-color);
+  //   &::after {
+  //     position: absolute;
+  //     content: '';
+  //     width: 22px;
+  //     height: 1px;
 
-        &:hover,
-        &:focus {
-            color: var(--accent-color);
-        }
-    }
+  //     background-color: var(--input);
+  //     border-radius: 2px;
 
-    &__email {
-        margin-top: 32px;
-    }
-
-
-    &__email {
-        font-size: 24px;
-        line-height: 1.16;
-        letter-spacing: 0.02rem;
-
-        margin-bottom: 64px;
-
-        color: var(--secondary-text-color);
-    }
-
-    &__social-list {
-        display: flex;
-    }
-
-    &__social-item:not(:last-child) {
-        margin-right: 20px;
-        
-        & :not(:last-child):after {
-            position: absolute;
-            content: 'yyy';
-            width: 22px;
-            // top: 10px;
-
-            border: 1px solid rgba(33, 33, 33, 0.2);
-            transform: rotate(90deg);
-        }
-    }
-
-    &__social-links {
-        position: relative;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1.22;
-        letter-spacing: 0.02rem;
-        text-decoration: none;
-
-        color: var(--accent-color);
-
-        &:not(:last-child):after {
-            position: absolute;
-            content: '';
-            width: 22px;
-            top: 10px;
-
-            border: 1px solid rgba(33, 33, 33, 0.2);
-            transform: rotate(90deg);
-        }
-    }
-
-
-
-//     .mobile-menu__instagram,
-// .mobile-menu__twitter,
-// .mobile-menu__facebook {
-//   position: relative;
-
-//   &::after {
-//     position: absolute;
-//     content: '';
-//     width: 22px;
-//     height: 1px;
-
-//     background-color: var(--input);
-//     border-radius: 2px;
-
-//     margin-right: auto;
-//     bottom: 10px;
-//     right: -20px;
-//     transform: rotate(90deg);
-//   }
-
+  //     margin-right: auto;
+  //     bottom: 10px;
+  //     right: -20px;
+  //     transform: rotate(90deg);
+  //   }
 }
 
 @media screen and (min-width: 768px) {

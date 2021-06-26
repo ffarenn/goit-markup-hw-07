@@ -1,27 +1,25 @@
 .footer {
-  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: var(--hero-footer-background);
 
   @media screen and (max-width: 480px) {
     width: 480px;
-    // margin: 0 auto sdelatj dlja futera
   }
 
-  //  @media screen and (min-width: 468px) {
-  //   & {
-  //     width: 768px;
-  //   }
-  // }
-
   &__container {
+    padding-left: 15px;
+    padding-right: 15px;
     display: block;
-    width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
 
   @media screen and (max-width: 767px) {
     &__container {
+      width: 450px;
       flex-direction: column;
       align-items: center;
     }
@@ -29,16 +27,24 @@
 
   @media screen and (min-width: 768px) {
     &__container {
-      padding-left: 76px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+      padding-left: 89px;
       padding-right: 76px;
     }
   }
 
   @media screen and (min-width: 1200px) {
     &__container {
-      align-items: baseline;
-      padding-left: 215px;
-      padding-right: 215px;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__logo {
+    @media (min-width: 768px) and (max-width: 1199px) {
+      margin-right: 165px;
     }
   }
 
@@ -52,12 +58,6 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    &__address-section {
-      margin-right: 70px;
-    }
-  }
-
   &__address-box {
     margin-top: 20px;
     margin-right: 0;
@@ -67,6 +67,13 @@
   @media screen and (min-width: 768px) {
     &__address-box {
       margin-right: 165px;
+      margin-bottom: 60px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__address-box {
+      margin-bottom: 0;
     }
   }
 
@@ -91,12 +98,6 @@
     letter-spacing: 0.03em;
     color: var(--footer-contact-link-color);
   }
-
-  // @media screen and (max-width: 767px) {
-  // &__address-section {
-  //   text-align: center;
-  //   margin-right: 70px;
-  // }
 
   &__social-list_margins {
     margin-top: 20px;
@@ -124,6 +125,12 @@
   }
 
   @media screen and (max-width: 1199px) {
+    &__box-text {
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
     &__box-text {
       text-align: center;
       margin-top: 60px;

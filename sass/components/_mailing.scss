@@ -1,6 +1,6 @@
 .mailing-form {
-  // display: flex;
-  // align-items: center;
+  display: flex;
+  align-items: center;
   margin-top: 20px;
   position: relative;
 
@@ -34,20 +34,19 @@
     }
   }
 
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     &__input {
-     margin-right: 12px;
+      margin-right: 12px;
     }
   }
-
 
   &__button {
     padding: 10px 28px;
   }
 
-   @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     &__button {
-     margin-top: 20px;
+      margin-top: 20px;
     }
   }
 
