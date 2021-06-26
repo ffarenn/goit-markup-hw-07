@@ -27,7 +27,7 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: baseline;
-      padding-left: 89px;
+      padding-left: 76px;
       padding-right: 76px;
     }
   }
@@ -73,12 +73,12 @@
     }
   }
 
-  &__address-item {
+  &__address-list {
     margin-top: 8px;
   }
 
   @media screen and (min-width: 1200px) {
-    &__address-item {
+    &__address-list {
       margin-top: 9px;
     }
   }
@@ -114,6 +114,7 @@
   }
 
   &__box-text {
+    font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
