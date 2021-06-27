@@ -25,18 +25,16 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      & {
-        background-image: linear-gradient(
-            HeroBackgroundGradient,
-            $HeroBackgroundGradient
-          ),
-          url(../images/hero-bg/hero-image-mob@2x.jpg);
-      }
+      background-image: linear-gradient(
+          $HeroBackgroundGradient,
+          $HeroBackgroundGradient
+        ),
+        url(../images/hero-bg/hero-image-mob@2x.jpg);
     }
 
     @media screen and (min-width: 768px) {
       background-image: linear-gradient(
-          HeroBackgroundGradient,
+          $HeroBackgroundGradient,
           $HeroBackgroundGradient
         ),
         url(../images/hero-bg/hero-image-tablet.jpg);
@@ -48,7 +46,7 @@
       (min-resolution: 2dppx) and (min-width: 768px) {
       & {
         background-image: linear-gradient(
-            HeroBackgroundGradient,
+            $HeroBackgroundGradient,
             $HeroBackgroundGradient
           ),
           url(../images/hero-bg/hero-image-tablet@2x.jpg);
@@ -57,7 +55,7 @@
 
     @media screen and (min-width: 1200px) {
       background-image: linear-gradient(
-          HeroBackgroundGradient,
+          $HeroBackgroundGradient,
           $HeroBackgroundGradient
         ),
         url(../images/hero-bg/hero-image-desktop.jpg);
@@ -73,7 +71,7 @@
       (min-resolution: 2dppx) and (min-width: 1200px) {
       & {
         background-image: linear-gradient(
-            HeroBackgroundGradient,
+            $HeroBackgroundGradient,
             $HeroBackgroundGradient
           ),
           url(../images/hero-bg/hero-image-desktop@2x.jpg);

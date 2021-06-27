@@ -27,20 +27,13 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: baseline;
-      padding-left: 76px;
-      padding-right: 76px;
     }
   }
 
   @media screen and (min-width: 1200px) {
     &__container {
       flex-wrap: nowrap;
-    }
-  }
-
-  &__logo {
-    @media (min-width: 768px) and (max-width: 1199px) {
-      margin-right: 165px;
+      justify-content: space-between;
     }
   }
 
@@ -54,6 +47,12 @@
     }
   }
 
+  @media (min-width: 768px) and (max-width: 1199px) {
+    &__address-section {
+      margin-right: 165px;
+    }
+  }
+
   &__address-box {
     margin-top: 20px;
     margin-right: 0;
@@ -62,7 +61,6 @@
 
   @media screen and (min-width: 768px) {
     &__address-box {
-      margin-right: 165px;
       margin-bottom: 60px;
     }
   }
@@ -97,12 +95,6 @@
 
   &__social-list_margins {
     margin-top: 20px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    &__social-list_margins {
-      margin-right: 93px;
-    }
   }
 
   &__social-link_bgcolor {
